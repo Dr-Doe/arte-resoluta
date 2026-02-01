@@ -1,0 +1,11 @@
+# Ignore Manim temporary files
+manim_studio/media/
+__pycache__/
+*.pyc
+
+# Ignore System junk
+Thumbs.db
+.DS_Store
+
+# Ignore VS Code settings (optional, but good practice)
+.vscode/
