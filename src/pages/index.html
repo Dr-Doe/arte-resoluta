@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Resoluta | Archive</title>
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+
+<body>
+
+    <div class="background-system">
+        <div class="titanium-wall"></div>
+        <div class="grid-floor"></div>
+    </div>
+
+    <header id="site-header">
+        <div class="header-left">
+            <a href="#home" class="logo-link">
+                <img src="../../public/assets/images/logo.svg" alt="Arte Resoluta" class="site-logo">
+            </a>
+            <div class="search-module">
+                <input type="text" class="search-input">
+                <img src="../../public/assets/images/search-icon.ico" class="search-icon" alt="Search Icon">
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#home" class="nav-link nav-home">HOME</a>
+            <a href="#math" class="nav-link nav-math">MATHEMATICS</a>
+            <a href="#phy" class="nav-link nav-phy">PHYSICS</a>
+        </nav>
+    </header>
+
+    <main class="horizontal-scroll-container">
+
+        <section id="home" class="panel paper-layout">
+
+            <article class="newspaper-sheet">
+                <header class="paper-header">
+                    <h1 class="main-headline">ARTE RESOLUTA</h1>
+                    <div class="sub-headline">
+                        <span>VOL. I</span>
+                        <span class="separator">◆</span>
+                        <span>NEUQUÉN, ARGENTINA</span>
+                        <span class="separator">◆</span>
+                        <span>EST. 2026</span>
+                    </div>
+                </header>
+                <div class="newspaper-body">
+                    <div class="col-text left-col">
+                        <h3>START_SEQUENCE</h3>
+                        <p>
+                            Welcome to the archive. This interface bridges the gap between abstract theory and visual intuition.
+                            Unlike traditional vertical scrolls, this system moves <strong>laterally</strong>—mimicking the timeline of scientific history itself.
+                        </p>
+                        <p>
+                            Mathematics is the language of logic. Physics is the rulebook of reality. Here, we decode both.
+                        </p>
+                    </div>
+                    <div class="col-center">
+                        <figure class="featured-box">
+                            <div class="placeholder-image">
+                                <span>[ SYSTEM DIAGRAM ]</span>
+                            </div>
+                            <figcaption>Fig 1.1: The Horizontal Continuum</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-text right-col">
+                        <h3>HOW_IT_WORKS</h3>
+                        <p>
+                            The interface simulates a 2000s-era terminal. Use the navigation tabs above or scroll right to explore the modules.
+                        </p>
+                        <p>
+                            <strong>Yellow Sections</strong> contain pure Logic and Algebra.
+                            <strong>Red Sections</strong> contain Physical Laws and Mechanics.
+                        </p>
+                        <div class="arrow-container">
+                            <span class="arrow-text">SCROLL RIGHT</span>
+                            <span class="arrow-icon">⟹</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section id="math" class="panel paper-layout">
+            <article class="newspaper-sheet">
+                <header class="paper-header header-math">
+                    <h1 class="main-headline">MATHEMATICS</h1>
+                    <div class="sub-headline">
+                        <span>SECTION II</span>
+                        <span class="separator">◆</span>
+                        <span>LOGIC & ALGEBRA</span>
+                        <span class="separator">◆</span>
+                        <span>THE LANGUAGE</span>
+                    </div>
+                </header>
+                <div class="newspaper-body">
+                    <div class="col-text">
+                        <h3>01_FOUNDATIONS</h3>
+                        <p>
+                            Mathematics is not invention; it is discovery. It is the underlying code of the universe, independent of human observation.
+                        </p>
+                        <p>
+                            In this module, we explore the structures that define reality, from simple arithmetic progressions to complex calculus.
+                        </p>
+                    </div>
+                    <div class="col-center">
+                        <figure class="featured-box">
+                            <div class="placeholder-image math-diagram">
+                                <span>[ EQUATION_VISUALIZER ]</span>
+                            </div>
+                            <figcaption>Fig 2.1: The Golden Ratio</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-text">
+                        <h3>02_TOPICS</h3>
+                        <ul style="list-style: none; padding: 0; font-family: 'Courier New', monospace; font-size: 0.9rem;">
+                            <li>[+] LINEAR ALGEBRA</li>
+                            <li>[+] CALCULUS I & II</li>
+                            <li>[+] NUMBER THEORY</li>
+                            <li>[+] GEOMETRY</li>
+                        </ul>
+                        <div class="arrow-container">
+                            <span class="arrow-text">TO PHYSICS</span>
+                            <span class="arrow-icon">⟹</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scrollContainer = document.querySelector(".horizontal-scroll-container");
+            if (scrollContainer) {
+                scrollContainer.addEventListener("wheel", (evt) => {
+                    if (evt.deltaY !== 0) {
+                        evt.preventDefault();
+                        scrollContainer.scrollLeft += evt.deltaY;
+                    }
+                }, { passive: false });
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
