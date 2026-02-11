@@ -162,18 +162,18 @@ body {
 }
 .separator { margin: 0 15px; color: var(--SPW); }
 .newspaper-body {
-    display: flex; flex-direction: row; height: 100%; gap: 40px;
+    display: flex; flex-direction: row; height: 100%; gap: 20px;
 }
 .col-text {
     flex: 1; min-width: 250px;
     display: flex; flex-direction: column;
-    padding-right: 40px;
+    padding-right: 5px;
 }
 .col-text:last-child { border-right: none; padding-right: 0; }
 .col-center {
     flex: 1.5; min-width: 300px;
     display: flex; justify-content: center;
-    padding-right: 40px;
+    padding-right: 5px;
     text-shadow: 0 1px 0 rgba(255,255,255,0.6);
 }
 .col-text p {
